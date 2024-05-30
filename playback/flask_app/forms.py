@@ -19,7 +19,7 @@ class SearchForm(FlaskForm):
     search_query = StringField(
         "Query", validators=[InputRequired(), Length(min=1, max=100)]
     )
-    submit = SubmitField("search")
+    submit = SubmitField("")
 
 
 class AlbumReviewForm(FlaskForm):
